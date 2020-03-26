@@ -1,0 +1,45 @@
+.navbar {
+	background-color: #d7f7fb !important;
+}
+
+.navbar-brand {
+	color: #a9a9a9 !important;
+	font-family: Comic Sans MS, cursive; 
+}
+
+.navbar-text {
+	color: #a9a9a9 !important;
+	font-weight: bold;
+	font-family: Comic Sans MS, cursive;
+}
+
+.content {
+	word-break: break-all;
+}
+
+.nav-pills .nav-link {
+    background-color: #c0bec6;
+    color: #ffffff;
+}
+
+body {
+	background-color: #f5fcff;
+}
+
+.channels { 
+    overflow-y:scroll; 
+    height: 69vh;
+}
+
+#message {
+	display: flex;
+	position: absolute;
+	bottom: 0;
+}
+
+.tab-content {
+	height: 65vh;
+	overflow: auto;
+	display: flex;
+	flex-direction: column-reverse;
+}

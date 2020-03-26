@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<!-- Required meta tags -->
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    	<!-- Bootstrap CSS -->
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    	<link rel="stylesheet" href="/static/styles.css">
+
+    	<link href="/static/favicon.ico" rel="icon" type="image/x-icon">
+
+		<title>Flack</title>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+		<script src="static/index.js"></script>
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand mb-0 h1 mr-auto" href="/">
+				<img class="icon" src="/static/favicon.ico" width="30" height="30" class="d-inline-block align-top" alt="Flack">
+    			Flack
+  			</a>
+  			<span class="navbar-text">
+  				hello,
+  			</span>
+  			<span class="ml-2">
+  				<svg class="bi bi-circle-fill mb-1" width="1em" height="1em" fill="limegreen" xmlns="http://www.w3.org/2000/svg">
+  					<circle cy="8" cx="8" r="7"/>
+				</svg>
+			</span>
+		</nav>
+
+		<div class="container-fluid">
+			<div class="row pt-1">
+				<div class="col-3">
+					<h1 id="header">Channels</h1>
+				</div>
+				<div class="col-9">
+					<h1 id="title" class="ml-3"># home</h1>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="col-3">
+					<form>
+						<div class="input-group mb-2">
+							<div class="input-group-prepend">
+				         		<div class="input-group-text">#</div>
+				        	</div>
+							<input id="channel" type="text" class="form-control" placeholder="New Channel">
+						</div>
+					</form>
+					<div class="channels">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						</div>
+					</div>
+				</div>
+				<div class="col-9">
+					<div class="tab-content ml-4" id="v-pills-tabContent">
+					</div>
+					<form id="message">
+						<div class="row ml-4">
+							<div class="form-group">
+								<input id="text" class="form-control form-control-lg" placeholder="Message" style="width: 900px" required></input>
+							</div>
+							<button id="send" type="submit" class="btn btn-dark ml-2 mb-3">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>
