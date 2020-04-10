@@ -38,7 +38,7 @@ body {
 }
 
 .tab-content {
-	height: 65vh;
+	height: 57vh;
 	overflow: auto;
 	display: flex;
 	flex-direction: column-reverse;
